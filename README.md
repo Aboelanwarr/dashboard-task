@@ -30,3 +30,6 @@ Tested on desktop and mobile with Tailwind’s responsive utilities.
 - Used Redux Toolkit to centralize table and chart data.
 - Implemented Tailwind for quick, responsive styling.
 - Chose Firebase for simple Google auth integration.
+
+## Production Link
+https://aboeyego.netlify.app/
