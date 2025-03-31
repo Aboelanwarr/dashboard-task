@@ -12,8 +12,6 @@ export default function Singin() {
   const router = useRouter();
   const dispatch = useDispatch();
   const provider = new GoogleAuthProvider();
-  provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
-
   const onLogin = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
