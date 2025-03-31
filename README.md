@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Eyego Frontend Internship Dashboard
 
-## Getting Started
+A responsive dashboard built for the Eyego Frontend Internship task using Next.js, Firebase, Redux Toolkit, Tailwind CSS, and Chart.js.
 
-First, run the development server:
+## Features
+- User authentication with Firebase (Google Sign-In).
+- Dynamic table with sorting, filtering, and pagination.
+- Chart visualization with Chart.js.
+- State management with Redux Toolkit.
+- Mobile-friendly design using Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Setup Instructions
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Aboelanwarr/eyego-dashboard
+   cd eyego-dashboard
+2. **Install Dependencies**:
+   npm install
+3. **Set Up Firebase**:
+  Create a Firebase project at console.firebase.google.com.
+  Add your Firebase config to a .env.local file
+4. **Run the project**:
+  npm run dev
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Notes
+Uses DummyJSON API (https://dummyjson.com/products) for sample data.
+Tested on desktop and mobile with Tailwind’s responsive utilities.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Approach
+- Used Redux Toolkit to centralize table and chart data.
+- Implemented Tailwind for quick, responsive styling.
+- Chose Firebase for simple Google auth integration.
