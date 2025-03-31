@@ -27,13 +27,13 @@ export default function Layout({children}) {
   console.log( isAuthenticated, user);
   useEffect(() => {
     if (!isAuthenticated) {
-      router.push("/signin");
+      router.push("/");
     }
   }, [isAuthenticated, router]);
   const handleLogout = () => {
     dispatch(logout())
     signOut(auth)
-    router.push("/signin")
+    router.push("/")
   }
   return (
     <div className="flex min-h-screen flex-col">
